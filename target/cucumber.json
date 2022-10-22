@@ -1,0 +1,250 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 354742900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 249371000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter the correct username and password",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_enter_the_correct_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148588500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_click_on_the_Login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-22T07:48:12.994Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1140395800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Adding multiple products to cart",
+        "description": "",
+        "id": "adding-products-to-cart;adding-multiple-products-to-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 175355100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 145288400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select the below products",
+            "match": {
+              "location": "stepdefinitions.HomePageStepDef.i_select_the_below_products(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Onesie"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bolt T-Shirt"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41741900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "items in the cart should be 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.HomePageStepDef.items_added_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Adding products to cart",
+    "description": "",
+    "id": "adding-products-to-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/HomePage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 319578400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-22T07:48:15.312Z",
+        "before": [
+          {
+            "result": {
+              "duration": 692589400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "This scenario is to login with incorrect credentails",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-login-with-incorrect-credentails",
+        "after": [
+          {
+            "result": {
+              "duration": 211376400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 245864300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter the incorrect username and password",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_enter_the_incorrect_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69693300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_click_on_the_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30740100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.LoginStepDef.i_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenario",
+    "description": "",
+    "id": "login-feature-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]
